@@ -2,12 +2,12 @@ import styled from "styled-components";
 import colors from "../../utils/colors";
 import me from "../../assets/images/me.jpg";
 import scrollDownGif from "../../assets/gifs/scroll-down.gif";
+import resume from "../../assets/pdfs/resume.pdf";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaDownload } from "@react-icons/all-files/fa/FaDownload";
 
 import { Button } from "semantic-ui-react";
-import { useState, useEffect } from "react";
 import { useGetScrollPosition } from "../../hooks";
 
 const Intro = () => {
@@ -17,14 +17,14 @@ const Intro = () => {
     <Section>
       <div className="container">
         <div>
-          <img id="image-of-me" src={me} />
+          <img id="image-of-me" src={me} alt="me" />
         </div>
         <div className="content">
           <h1>Daniel Laufer</h1>
           <p>Computer Science Student and Software Engineer</p>
           <div className="icon-row">
             <a
-              href="https://www.youtube.com/watch?v=lPJVi797Uy0"
+              href="https://github.com/Daniel-Laufer"
               target="_blank"
               rel="noreferrer"
             >
@@ -38,7 +38,14 @@ const Intro = () => {
               <FaLinkedin className="icon" color={colors.linkedInBlue} />
             </a>
             <Button>
-              <FaDownload /> Resume
+              <a
+                href={resume}
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaDownload /> Resume
+              </a>
             </Button>
           </div>
         </div>
