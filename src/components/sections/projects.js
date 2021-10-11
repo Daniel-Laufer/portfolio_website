@@ -15,7 +15,7 @@ const Projects = () => {
       </Fade>
       <div className="container">
         {projects.map((project, index) => {
-          const imageLeft = index % 2 == 0;
+          const imageLeft = index % 2 === 0;
           const className = imageLeft ? "project left" : "project right";
           return (
             <div className={className}>
@@ -114,9 +114,7 @@ const Section = styled.section`
   padding: 4rem 15rem;
   padding-bottom: 15rem;
   background-color: ${colors.blue};
-  @media (max-width: 1249px) {
-    height: 105vh;
-  }
+
   color: white;
   text-align: left;
   h1 {
@@ -130,7 +128,6 @@ const Section = styled.section`
     gap: 4rem;
     width: 100%;
     .project {
-      min-width: 500px;
       position: relative;
       .image-container {
         display: flex;
@@ -148,6 +145,7 @@ const Section = styled.section`
       .description {
         background-color: rgba(255, 255, 255, 0.98);
         color: black;
+        line-height: 1.7rem;
         font-size: 20px;
         max-width: 550px;
         height: 230px;
@@ -227,6 +225,51 @@ const Section = styled.section`
 
   .custom-shape-divider-bottom-1633906461 .shape-fill {
     fill: #ffffff;
+  }
+
+  @media (max-width: 1058px) {
+    .container {
+      .project.left {
+        h1 {
+          text-align: center;
+        }
+        .image-container {
+          justify-content: center;
+        }
+        .description {
+          position: static;
+          margin: auto;
+          max-width: none;
+          width: 610px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          -webkit-box-shadow: 0 !important;
+          box-shadow: 0 !important;
+        }
+      }
+      .project.right {
+        h1 {
+          text-align: center;
+        }
+        .image-container {
+          justify-content: center;
+        }
+        .description {
+          position: static;
+          margin: auto;
+          max-width: none;
+          width: 610px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          -webkit-box-shadow: 0 !important;
+          box-shadow: 0 !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 1450px) {
+    padding: 1rem 1rem;
+    padding-bottom: 16rem;
   }
 `;
 

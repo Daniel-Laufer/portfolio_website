@@ -11,10 +11,10 @@ const Skills = () => {
       </Fade>
       <Fade left>
         <p>
-          Here are some of the technologies that I am proficient with! If you
-          would like to see my full list of skills or if you are unfamiliar with
-          some of the logos displayed below please feel free to take a look at
-          my resume.
+          Here are some of the technologies that I am most proficient at using.
+          If you would like to see a complete list of my skills, or if you are
+          unfamiliar with any of the logos displayed below, please feel free to
+          look at my resume.
         </p>
         <div className="skills">
           {Object.keys(skillImages).map((key, index) => (
@@ -44,18 +44,19 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 135vh;
-  padding-top: 100px;
-  padding: 4rem 15rem;
+  padding: 8rem 15rem;
   background-color: ${colors.white};
   color: black;
+  @media (max-width: 1000px) {
+    padding: 8rem 1rem;
+  }
 
   h1 {
     font-size: 40px;
   }
   p {
     font-size: 20px;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .skills {
     display: flex;
@@ -70,6 +71,12 @@ const Section = styled.section`
       height: 150px;
       border-radius: 10px;
       object-fit: contain;
+    }
+    @media (max-width: 1237px) {
+      img {
+        width: 100px;
+        height: 100px;
+      }
     }
   }
   .custom-shape-divider-bottom-1633933399 {

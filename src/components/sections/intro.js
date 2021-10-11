@@ -99,13 +99,9 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 95vh;
-  padding-top: 100px;
+  padding: 24rem 3rem;
+  padding-top: 11rem;
   background: ${colors.white};
-  margin-top: 4rem;
-  @media (max-width: 1249px) {
-    height: 105vh;
-  }
 
   .container {
     display: flex;
@@ -155,7 +151,7 @@ const Section = styled.section`
 
   .scroll-down-gif {
     position: absolute;
-    top: 70vh;
+    top: 75vh;
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-in;
     -moz-transition: opacity 0.3s ease-in;
@@ -181,6 +177,20 @@ const Section = styled.section`
 
   .custom-shape-divider-bottom-1633823571 .shape-fill {
     fill: #0094ff;
+  }
+  @media (max-width: 1333px) {
+    .scroll-down-gif {
+      top: 85vh;
+    }
+    .container {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 40px !important;
+    }
+    p {
+      font-size: 23px !important;
+    }
   }
 `;
 

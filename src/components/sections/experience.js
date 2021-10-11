@@ -76,13 +76,10 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 100vh;
-  padding-top: 100px;
   padding: 4rem 15rem;
+  padding-bottom: 17rem;
   background-color: ${colors.blue};
-  @media (max-width: 1249px) {
-    height: 105vh;
-  }
+
   color: white;
   text-align: left;
   h1 {
@@ -129,6 +126,7 @@ const Section = styled.section`
       }
     }
     .content {
+      min-width: 530px;
       display: flex;
       gap: 0.8rem;
       flex-direction: column;
@@ -197,6 +195,41 @@ const Section = styled.section`
 
   .custom-shape-divider-bottom-1633906461 .shape-fill {
     fill: #ffffff;
+  }
+
+  @media (max-width: 1249px) {
+  }
+  @media (max-width: 1050px) {
+    padding: 12rem 1rem;
+    padding-bottom: 20rem;
+    .experiences {
+      .logos {
+        div {
+          width: 70px;
+          height: 70px;
+        }
+        div::before {
+          width: 10px;
+          height: 80px;
+          transform: translateX(-1.5rem);
+        }
+      }
+      .content {
+        font-size: 15px;
+        .job-title-date-row {
+          font-size: 15px;
+        }
+        .company {
+          color: ${colors.blue};
+        }
+        .job-description {
+          line-height: 1.6em;
+          margin: 5px 0 15px;
+          padding: 0;
+          font-size: 15px;
+        }
+      }
+    }
   }
 `;
 

@@ -14,7 +14,8 @@ const projects = [
     description:
       "An online marketplace that facilitates the process of purchasing and selling textbooks among students.",
     youtubeURL: "https://youtu.be/b674r0d8hjw",
-    technologies: "React, Redux, Javascript, HTML, CSS, Firebase, Firestore",
+    technologies:
+      "React, Redux, Javascript, HTML, CSS, Firebase, Firestore, Git",
     gifURL: "https://github-readme-media.s3.amazonaws.com/textbookStore.gif",
     liveAppURL: "https://textbook-store-2e072.web.app/",
     githubURL: "https://github.com/Daniel-Laufer/textbook_store",
@@ -33,7 +34,8 @@ const projects = [
     title: "MIPS Assembly Doodle Jump ",
     description:
       'A remake of the classic "Doodle Jump" mobile game using the MIPS Assembly Language. This was the final project of the "CSC258 Computer Organization/Architecture" course that I took at the University of Toronto',
-    technologies: "MIPS Assembly, MARS (MIPS Assembler and Runtime Simulator)",
+    technologies:
+      "MIPS Assembly, MARS (MIPS Assembler and Runtime Simulator), Git",
     youtubeURL: "https://www.google.com/",
     gifURL: "https://github-readme-media.s3.amazonaws.com/doodle.gif",
     squareAspectRatio: true,
