@@ -8,12 +8,20 @@ import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaDownload } from "@react-icons/all-files/fa/FaDownload";
 import Typist from "react-typist";
 import Fade from "react-reveal/Fade";
+import { scroller } from "react-scroll";
 
 import { Button } from "semantic-ui-react";
 import { useGetScrollPosition } from "../../hooks";
 
 const Intro = () => {
   const scrollPosition = useGetScrollPosition();
+  const scrollToSection = () => {
+    scroller.scrollTo("custom-shape-divider-bottom-1633823571", {
+      duration: 1000,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
 
   return (
     <Section>
@@ -67,6 +75,7 @@ const Intro = () => {
         src={scrollDownGif}
         alt="scroll down"
         width="150"
+        onClick={scrollToSection}
       />
       <div class="custom-shape-divider-bottom-1633823571">
         <svg

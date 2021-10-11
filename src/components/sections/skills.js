@@ -44,7 +44,7 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 115vh;
+  height: 135vh;
   padding-top: 100px;
   padding: 4rem 15rem;
   background-color: ${colors.white};

@@ -9,7 +9,6 @@ const experiences = [
       "Designed and created the new ‘Retirement Blueprint’ planning tool on Wealthscope’s ‘Advisor’ platform",
       "Improved the local development environment by creating new Docker containers to run all components of the application’sinfrastructure locally to streamline the process of full stack development",
       "Technologies used:  React, Redux, Django, Django REST Framework, Python, Pandas, AWS, Docker, PostgreSQL, Jira",
-      "Please view my resume for a more detailed overview!",
     ],
   },
   {
