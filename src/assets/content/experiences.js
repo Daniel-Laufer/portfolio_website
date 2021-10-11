@@ -23,7 +23,7 @@ const experiences = [
   },
   {
     "job-title": "Cloud Computing Research Assistant",
-    dates: "Sept 2021 - Oct 2021",
+    dates: "September 2021 - October 2021",
     company: "Schulich School of Business, York University",
     description: [
       "Used Google Cloud’s Compute Engine and Cloud Storage to gather all comments made by Reddit users on the subreddit‘Wall Street Bets’ during the years 2019-2021",
@@ -32,11 +32,11 @@ const experiences = [
   },
   {
     "job-title": "Computer Science Teaching Assistant (CSC148)",
-    dates: "Jan 2021 - May 2021",
+    dates: "January 2021 - May 2021",
     company: "University of Toronto",
     description: [
       "Led weekly tutorial sessions, assisted professors in lectures, and marked assessments",
-      "CSC148 teaches object-oriented programming in Python, asymptotic analysis of algorithms, data structures, and more",
+      "CSC148 is a Computer Science course at the University of Toronto teaches object-oriented programming in Python, asymptotic analysis of algorithms, data structures, and more",
     ],
   },
 ];

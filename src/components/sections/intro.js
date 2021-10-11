@@ -6,6 +6,8 @@ import resume from "../../assets/pdfs/resume.pdf";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaDownload } from "@react-icons/all-files/fa/FaDownload";
+import Typist from "react-typist";
+import Fade from "react-reveal/Fade";
 
 import { Button } from "semantic-ui-react";
 import { useGetScrollPosition } from "../../hooks";
@@ -15,41 +17,50 @@ const Intro = () => {
 
   return (
     <Section>
-      <div className="container">
-        <div>
-          <img id="image-of-me" src={me} alt="me" />
-        </div>
-        <div className="content">
-          <h1>Daniel Laufer</h1>
-          <p>Computer Science Student and Software Engineer</p>
-          <div className="icon-row">
-            <a
-              href="https://github.com/Daniel-Laufer"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub className="icon" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/daniel-laufer-7ba986176/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin className="icon" color={colors.linkedInBlue} />
-            </a>
-            <Button>
+      <Fade top cascade duration={1000}>
+        <div className="container">
+          <div>
+            <img id="image-of-me" src={me} alt="me" />
+          </div>
+          <div className="content">
+            <h1>
+              <Typist cursor={{ hideWhenDone: true }} avgTypingDelay={80}>
+                <Typist.Delay ms={1100} />
+                Hi there! My name is
+                <Typist.Backspace count={20} delay={500} />
+                Daniel Laufer
+              </Typist>
+            </h1>
+            <p>Computer Science Student and Software Engineer</p>
+            <div className="icon-row">
               <a
-                href={resume}
-                style={{ color: "white" }}
+                href="https://github.com/Daniel-Laufer"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaDownload /> Resume
+                <FaGithub className="icon" />
               </a>
-            </Button>
+              <a
+                href="https://www.linkedin.com/in/daniel-laufer-7ba986176/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin className="icon" color={colors.linkedInBlue} />
+              </a>
+              <Button>
+                <a
+                  href={resume}
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaDownload /> Resume
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
+      </Fade>
       <img
         className="scroll-down-gif"
         style={scrollPosition > 0 ? { opacity: 0 } : {}}
@@ -137,9 +148,9 @@ const Section = styled.section`
     position: absolute;
     top: 70vh;
     opacity: 1;
-    -webkit-transition: opacity 0.2s ease-in;
-    -moz-transition: opacity 0.2s ease-in;
-    -o-transition: opacity 0.2s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
   }
 
   .custom-shape-divider-bottom-1633823571 {

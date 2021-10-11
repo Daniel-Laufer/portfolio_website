@@ -3,9 +3,10 @@ import colors from "../../utils/colors";
 import wealthscope from "../../assets/images/wealthscope.png";
 import schulich from "../../assets/images/schulich.jpeg";
 import gdsc from "../../assets/images/gdsc.webp";
-import uoft from "../../assets/images/uoft.png";
+import uoft from "../../assets/images/uoft_square.png";
 import { useState } from "react";
 import experiences from "../../assets/content/experiences";
+import Fade from "react-reveal/Fade";
 
 const Experience = () => {
   const [selectedExperience, setSelectedExperience] = useState(0);
@@ -15,38 +16,44 @@ const Experience = () => {
 
   return (
     <Section>
-      <h1>Experience</h1>
+      <Fade top duration={1000}>
+        <h1>Experience</h1>
+      </Fade>
       <div className="experiences">
-        <div className="logos">
-          {images.map((image, index) => (
-            <div
-              className={selectedExperience === index ? "active" : ""}
-              onClick={() => setSelectedExperience(index)}
-            >
-              <img src={image} alt="Company Logo" />
-            </div>
-          ))}
-        </div>
-
-        <div className="content">
-          <div className="job-title-date-row">
-            <div className="job-title">
-              {experiences[selectedExperience]["job-title"]}
-            </div>
-            <div className="dates">
-              {experiences[selectedExperience]["dates"]}
-            </div>
+        <Fade left duration={1000}>
+          <div className="logos">
+            {images.map((image, index) => (
+              <div
+                className={selectedExperience === index ? "active" : ""}
+                onClick={() => setSelectedExperience(index)}
+              >
+                <img src={image} alt="Company Logo" />
+              </div>
+            ))}
           </div>
-          <div className="company">
-            {experiences[selectedExperience]["company"]}
+        </Fade>
+        <Fade right duration={1000}>
+          <div className="content">
+            <div className="job-title-date-row">
+              <div className="job-title">
+                {experiences[selectedExperience]["job-title"]}
+              </div>
+              <div className="dates">
+                {experiences[selectedExperience]["dates"]}
+              </div>
+            </div>
+            <div className="company">
+              {experiences[selectedExperience]["company"]}
+            </div>
+            <ul className="job-description">
+              {experiences[selectedExperience]["description"].map((line) => {
+                return <li>{line}</li>;
+              })}
+            </ul>
           </div>
-          <ul className="job-description">
-            {experiences[selectedExperience]["description"].map((line) => {
-              return <li>{line}</li>;
-            })}
-          </ul>
-        </div>
+        </Fade>
       </div>
+
       <div class="custom-shape-divider-bottom-1633906461">
         <svg
           data-name="Layer 1"
@@ -99,7 +106,11 @@ const Section = styled.section`
           width: 100%;
           height: 100%;
         }
+        img:hover {
+          cursor: pointer;
+        }
       }
+
       div::before {
         width: 10px;
         height: 110px;
