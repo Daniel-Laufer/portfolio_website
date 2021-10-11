@@ -1,5 +1,8 @@
-# The Code for my Portfolio Website
+# My Portfolio Website
 
-Feel to visit my website [here](https://daniel-laufer.github.io)
+Visit it here: [daniel-laufer.github.io](https://daniel-laufer.github.io)
+
+
+
 
 
