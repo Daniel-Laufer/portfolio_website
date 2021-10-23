@@ -4,9 +4,10 @@ const experiences = [
     dates: "September 2021 - Present",
     company: "Wealthscope",
     description: [
-      "Developing back-end APIs using the Django REST Framework; developing front-end applications with React and Redux",
+      "Developing front-end applications with React and Redux; developing back-end APIs using the Django REST Framework",
       "Created Django commands to process and upload large amounts of financial security data to AWS RDS",
-      "Designed and created the new ‘Retirement Blueprint’ planning tool on Wealthscope’s ‘Advisor’ platform",
+      "Created the new ‘Retirement Blueprint’ planning tool on Wealthscope’s ‘Advisor’ platform",
+      "Created a CI/CD pipeline using GitHub Actions to automatically deploy code changes to AWS EC2 instances",
       "Improved the local development environment by creating new Docker containers to run all components of the application’sinfrastructure locally to streamline the process of full stack development",
       "Technologies used:  React, Redux, Django, Django REST Framework, Python, Pandas, AWS, Docker, PostgreSQL, Jira",
     ],
@@ -18,6 +19,7 @@ const experiences = [
     description: [
       "Hosting biweekly technical workshops for students on topics including Git, Docker, AWS, and more",
       "Empowering students to expand their knowledge in technology and build solutions for their local communities",
+      "Regularly hosted professional development events such as mock technical interviews for students",
     ],
   },
   {
