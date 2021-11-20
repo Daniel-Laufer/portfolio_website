@@ -127,6 +127,7 @@ const Section = styled.section`
     }
     .content {
       min-width: 530px;
+
       display: flex;
       gap: 0.8rem;
       flex-direction: column;

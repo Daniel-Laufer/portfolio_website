@@ -67,16 +67,17 @@ const Intro = () => {
               </Button>
             </div>
           </div>
+          <img
+            className="scroll-down-gif"
+            style={scrollPosition > 0 ? { opacity: 0 } : { zIndex: 99999 }}
+            src={scrollDownGif}
+            alt="scroll down"
+            width="150"
+            onClick={scrollToSection}
+          />
         </div>
       </Fade>
-      <img
-        className="scroll-down-gif"
-        style={scrollPosition > 0 ? { opacity: 0 } : {}}
-        src={scrollDownGif}
-        alt="scroll down"
-        width="150"
-        onClick={scrollToSection}
-      />
+
       <div class="custom-shape-divider-bottom-1633823571">
         <svg
           data-name="Layer 1"
@@ -109,6 +110,7 @@ const Section = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     #image-of-me {
       width: 350px;
@@ -151,7 +153,7 @@ const Section = styled.section`
 
   .scroll-down-gif {
     position: absolute;
-    top: 75vh;
+    bottom: -200px;
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-in;
     -moz-transition: opacity 0.3s ease-in;
@@ -179,9 +181,6 @@ const Section = styled.section`
     fill: #0094ff;
   }
   @media (max-width: 1333px) {
-    .scroll-down-gif {
-      top: 85vh;
-    }
     .container {
       flex-direction: column;
     }
