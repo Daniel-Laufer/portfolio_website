@@ -1,26 +1,35 @@
 const experiences = [
   {
-    "job-title": "Full Stack Developer",
-    dates: "September 2021 - Present",
-    company: "Wealthscope",
+    "job-title": "Computer Science Teaching Assistant (CSC209 & CSC148)",
+    dates: "January 2021 - April 2021",
+    company: "University of Toronto",
     description: [
-      "Developing front-end applications with React and Redux; developing back-end APIs using the Django REST Framework",
-      "Created a tool to allow users to compare their investment portfolios (consisting of stocks, ETFs, crypto, etc) to determine how various statistics differ between them including (annualized returns, total risk, fees, etc)",
-      "Created a CI/CD pipeline using GitHub Actions to automatically deploy code changes to AWS EC2 instances",
-      "Created the new ‘Retirement Blueprint’ tool that determines an individual’s required retirement target wealth and creates an investment plan to assist them in obtaining it",
-      "Created Django commands to process and upload large amounts of financial security data to AWS RDS",
-      "Improved the local development environment by creating new Docker containers to run all components of the application’s infrastructure locally to streamline the process of full stack development",
-      "Technologies used:  React, Redux, Django, Django REST Framework, Python, Pandas, AWS, Docker, PostgreSQL, Jira",
+      "Assisted professors in lecture sections (each containing 160 students), marked assessments, invigilated tests/exams, etc",
+      "CSC209 (Systems Programming) covers topics including Linux, C, Bash, concurrency, etc. CSC148 (Introduction to Computer Science) covers object-oriented programming in Python, runtime analysis, data structures, etc",
     ],
   },
   {
     "job-title": "Technical/Workshop Lead",
-    dates: "September 2021 - Present",
+    dates: "August 2021 - Present",
     company: "Google Developer Student Club at the University of Toronto",
     description: [
       "Hosting biweekly technical workshops regularly attended by over 30 UofT students on topics like Git, React, AWS, etc",
-      "Empowering students to expand their knowledge in technology and build solutions for their local communities",
       "Regularly hosted professional development events such as mock technical interviews for students",
+      "Empowering students to expand their knowledge in technology and build solutions for their local communities",
+    ],
+  },
+  {
+    "job-title": "Full Stack Developer Intern",
+    dates: "September 2021 - December 2021",
+    company: "Wealthscope",
+    description: [
+      "Developed front-end applications with React and Redux; developing back-end APIs using the Django REST Framework",
+      "Created a tool that allows users to compare their investment portfolios (consisting of stocks, ETFs, crypto, etc) to determine how various statistics differ between them (including annualized returns, total risk, fees, etc)",
+      "Created CI/CD pipelines using GitHub Actions to automatically deploy code changes to AWS EC2 instances",
+      "Created the new ‘Retirement Blueprint’ tool that guides users through creating personalized investment and saving plans to reach their financial goals",
+      "Improved the local development environment by creating new Docker containers to run all components of the application’s infrastructure locally to streamline the process of full stack development",
+      "Created Django commands to process and upload large amounts of financial security data to AWS RDS",
+      "Technologies used:  React, Redux, Django, Django REST Framework, Python, Pandas, AWS, Docker, PostgreSQL, Jira",
     ],
   },
   {
@@ -34,11 +43,10 @@ const experiences = [
   },
   {
     "job-title": "Computer Science Teaching Assistant (CSC148)",
-    dates: "January 2021 - May 2021",
+    dates: "January 2021 - April 2021",
     company: "University of Toronto",
     description: [
-      "Led weekly tutorial sessions for 80 students, assisted professors in lectures containing 160 students, and marked assessments",
-      "CSC148 is a Computer Science course at the University of Toronto teaches object-oriented programming in Python, asymptotic analysis of algorithms, data structures, and more",
+      "Led weekly tutorial sessions for 80 students, assisted professors in lectures containing 160 students, marked assessments",
     ],
   },
 ];

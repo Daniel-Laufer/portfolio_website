@@ -159,6 +159,9 @@ const Section = styled.section`
     -moz-transition: opacity 0.3s ease-in;
     -o-transition: opacity 0.3s ease-in;
   }
+  .scroll-down-gif:hover {
+    cursor: pointer;
+  }
 
   .custom-shape-divider-bottom-1633823571 {
     position: absolute;

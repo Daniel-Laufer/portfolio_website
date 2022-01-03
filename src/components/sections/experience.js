@@ -12,7 +12,7 @@ const Experience = () => {
   const [selectedExperience, setSelectedExperience] = useState(0);
 
   // images in order from top to bottom
-  const images = [wealthscope, gdsc, schulich, uoft];
+  const images = [uoft, gdsc, wealthscope, schulich, uoft];
 
   return (
     <Section>
@@ -27,7 +27,11 @@ const Experience = () => {
                 className={selectedExperience === index ? "active" : ""}
                 onClick={() => setSelectedExperience(index)}
               >
-                <img src={image} alt="Company Logo" />
+                <img
+                  src={image}
+                  alt="Company Logo"
+                  style={image === wealthscope ? { borderRadius: 0 } : {}}
+                />
               </div>
             ))}
           </div>
