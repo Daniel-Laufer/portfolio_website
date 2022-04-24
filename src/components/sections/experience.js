@@ -12,7 +12,7 @@ const Experience = () => {
   const [selectedExperience, setSelectedExperience] = useState(0);
 
   // images in order from top to bottom
-  const images = [uoft, gdsc, wealthscope, schulich, uoft];
+  const images = [uoft, gdsc, wealthscope, schulich];
 
   return (
     <Section>
