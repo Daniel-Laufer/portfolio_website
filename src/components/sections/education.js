@@ -17,7 +17,7 @@ const Education = () => {
           <div className="content">
             <h1>University of Toronto</h1>
             <p>
-              PEY Co-op Student specializing in <span>computer science</span>{" "}
+              PEY Co-op student specializing in <span>computer science</span>{" "}
               and <span>information security</span>; minoring in{" "}
               <span>mathematics</span>
             </p>
