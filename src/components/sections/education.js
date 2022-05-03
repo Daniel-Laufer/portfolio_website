@@ -17,8 +17,8 @@ const Education = () => {
           <div className="content">
             <h1>University of Toronto</h1>
             <p>
-              Specializing in <span>computer science</span> and{" "}
-              <span>information security</span>; minoring in{" "}
+              PEY Co-op Student specializing in <span>computer science</span>{" "}
+              and <span>information security</span>; minoring in{" "}
               <span>mathematics</span>
             </p>
             <p>
@@ -26,6 +26,7 @@ const Education = () => {
               earlier than
               <span> June 2024</span>
             </p>
+
             <p>
               <span>CGPA:</span> 3.9/4.0 (88% average)
             </p>

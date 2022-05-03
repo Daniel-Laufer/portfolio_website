@@ -182,7 +182,7 @@ const Section = styled.section`
 
   .custom-shape-divider-bottom-1633906461 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;

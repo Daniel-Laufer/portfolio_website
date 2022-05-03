@@ -4,9 +4,9 @@ const experiences = [
     dates: "January 2021 - Present",
     company: "University of Toronto",
     description: [
-      " Assisted professors in lecture sections (each containing 160+ students) by leading in-class activities and answering students\' questions.",
+      " Assisted professors in lecture sections (each containing 160+ students) by leading in-class activities and answering students' questions.",
       "Marked hundreds of assignment/exam submissions per term under tight deadlines and provide constructive feedback to students to improve their computer science skills.",
-      "Courses: CSC209 (Systems Programming - Linux, C, Bash, etc.), CSC148 (Introduction to Computer Science - Python, Object-oriented-programming, data structures, etc.)."
+      "Courses: CSC209 (Systems Programming - Linux, C, Bash, etc.), CSC148 (Introduction to Computer Science - Python, Object-oriented-programming, data structures, etc.).",
     ],
   },
   {
@@ -39,7 +39,7 @@ const experiences = [
     company: "Schulich School of Business, York University",
     description: [
       "Developed software and used various Google Cloud services to collect 31 million comments made by Reddit users on the subreddit 'Wall Street Bets' during the years 2019-2021.",
-      "Technologies used: Docker, Google Cloud's Compute Engine, Google Cloud's Cloud Storage, Python, Pandas."
+      "Technologies used: Docker, Google Cloud's Compute Engine, Google Cloud's Cloud Storage, Python, Pandas.",
     ],
   },
   // {

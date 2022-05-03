@@ -14,17 +14,20 @@ import react from "./react.png";
 import js from "./js.png";
 import css from "./css.png";
 import html from "./html.png";
+import cpp from "./cpp.png";
 
 const skillImages = {
   python,
   postgres,
+  c,
+  cpp,
   linux,
   react,
   java,
   aws,
   gcp,
   django,
-  c,
+
   firebase,
   git,
   neo4j,

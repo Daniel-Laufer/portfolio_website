@@ -1,5 +1,24 @@
 const projects = [
   {
+    title: "StudyTogether",
+    description:
+      "A web app that facilitates the process of forming study groups at universities across Canada. Users can easily form meaningful connections with other students and form study groups that others can join.",
+    technologies: "React, Redux, MongoDB, Google Cloud Run, Socket.IO",
+  },
+  {
+    title: "HTTP Server",
+    description:
+      " A fully-functional HTTP server that is capable of serving web content to multiple clients simultaneously. Also added support for persistent connections and pipelined HTTP requests.",
+    technologies: "C Programming Language.",
+  },
+  {
+    title: "Multi-network Router ",
+    description:
+      "Created a functional multi-network router that is capable of running widely used intra-AS routing algorithms like OSPF and RIP.",
+    technologies: "Python, Mininet",
+    gifURL: "https://github-readme-media.s3.amazonaws.com/demo_edited_gif.gif",
+  },
+  {
     title: "Kubernetes Flashcard App",
     description:
       "A web application that allows users to create and share personalized collections of flashcards to assist themselves andothers in studying for assessments, learning new languages, and much more. ",
