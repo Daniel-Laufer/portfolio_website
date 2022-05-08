@@ -3,7 +3,7 @@ import Skills from "../sections/skills";
 
 function Main() {
   return (
-    <div>
+    <div style={{ minWidth: "675px" }}>
       <Intro />
       <Experience />
       <Skills />

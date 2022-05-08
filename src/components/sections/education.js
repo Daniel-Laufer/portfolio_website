@@ -30,6 +30,14 @@ const Education = () => {
             <p>
               <span>CGPA:</span> 3.9/4.0 (88% average)
             </p>
+            <p>
+              <span> Some of my favourite courses I've taken at UofT: </span>
+              Principles of Computer Networks, Introduction to Databases,
+              Computational Complexity and Computability, Introduction to
+              Software Engineering, Software Design with Java , Data Structures
+              and Analysis, Systems Programming (Linux, Bash, C), Computer
+              Organization/Architecture (MIPS Assembly & Computer Hardware)
+            </p>
           </div>
         </Fade>
       </div>

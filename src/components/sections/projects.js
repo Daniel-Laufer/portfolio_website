@@ -58,7 +58,7 @@ const Projects = () => {
                         <FaGithub />
                       </a>
                     ) : null}
-                    {project.githubURL ? (
+                    {project.youtubeURL ? (
                       <a
                         href={project.youtubeURL}
                         target="_blank"

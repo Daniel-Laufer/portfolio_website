@@ -3,7 +3,10 @@ const projects = [
     title: "StudyTogether",
     description:
       "A web app that facilitates the process of forming study groups at universities across Canada. Users can easily form meaningful connections with other students and form study groups that others can join.",
-    technologies: "React, Redux, MongoDB, Google Cloud Run, Socket.IO",
+    technologies:
+      "React, Redux, MongoDB, Google Cloud Run, Firebase, Socket.IO",
+    liveAppURL: "https://studytogether-bad5e.firebaseapp.com",
+    githubURL: "https://github.com/Daniel-Laufer/StudyTogether",
   },
   {
     title: "HTTP Server",
@@ -17,6 +20,13 @@ const projects = [
       "Created a functional multi-network router that is capable of running widely used intra-AS routing algorithms like OSPF and RIP.",
     technologies: "Python, Mininet",
     gifURL: "https://github-readme-media.s3.amazonaws.com/demo_edited_gif.gif",
+  },
+  {
+    title: "Zoomer Rideshare ",
+    description:
+      "A rideshare app that allows you to request rides, matching you with drivers in the nearby area to safely take you to your destination.",
+    technologies:
+      "Microservice architecture, Java, Maven, PostgreSQL, MongoDB, Neo4j, Docker, Python",
   },
   {
     title: "Kubernetes Flashcard App",
@@ -44,7 +54,6 @@ const projects = [
     description:
       "A visualization of several pathfinding algorithms including A* and Dijkstra’s algorithm",
     technologies: "Python, PyGame, Git",
-    youtubeURL: "https://www.google.com/",
     gifURL: "https://github-readme-media.s3.amazonaws.com/pathfinder.gif",
     githubURL: "https://github.com/Daniel-Laufer/path_finding_visualization",
     squareAspectRatio: true,
@@ -55,7 +64,6 @@ const projects = [
       'A remake of the classic "Doodle Jump" mobile game using the MIPS Assembly Language. This was the final project of the "CSC258 Computer Organization/Architecture" course that I took at the University of Toronto',
     technologies:
       "MIPS Assembly, MARS (MIPS Assembler and Runtime Simulator), Git",
-    youtubeURL: "https://www.google.com/",
     gifURL: "https://github-readme-media.s3.amazonaws.com/doodle.gif",
     squareAspectRatio: true,
   },
