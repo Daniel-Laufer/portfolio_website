@@ -49,7 +49,7 @@ const Intro = () => {
                 <FaGithub className="icon" />
               </a>
               <a
-                href="https://www.linkedin.com/in/daniel-laufer-7ba986176/"
+                href="https://www.linkedin.com/in/laufer-daniel/"
                 target="_blank"
                 rel="noreferrer"
               >

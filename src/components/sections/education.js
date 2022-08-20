@@ -22,9 +22,8 @@ const Education = () => {
               <span>mathematics</span>
             </p>
             <p>
-              I'm in my <span>third year</span> and expecting to graduate no
-              earlier than
-              <span> June 2024</span>
+              I'm in my <span>third year</span> and expecting to graduate in
+              <span> June 2025</span>
             </p>
 
             <p>

@@ -4,9 +4,10 @@ const experiences = [
     dates: "January 2021 - Present",
     company: "University of Toronto",
     description: [
-      " Assisted professors in lecture sections (each containing 160+ students) by leading in-class activities and answering students' questions.",
-      "Marked hundreds of assignment/exam submissions per term under tight deadlines and provide constructive feedback to students to improve their computer science skills.",
-      "Courses: CSC209 (Systems Programming - Linux, C, Bash, etc.), CSC148 (Introduction to Computer Science - Python, Object-oriented-programming, data structures, etc.).",
+      " Supported professors in lecture sections (each containing 160+ students) by leading in-class activities and answering students’ questions. Received positive feedback from professors and students.",
+      "Graded hundreds of assignment/exam submissions per term under tight deadlines and provide constructive feedback to students to improve their computer science skills.",
+      "Created and graded weekly tutorial content and led tutorial sections each containing 30+ students.",
+      "Courses: CSC209 (Systems Programming: Linux, C, Bash, etc.), CSC148 (Introduction to Computer Science: Python, object-oriented-programming, data structures, etc.), CSC207 (Software Design: Java, design Patterns, object-oriented-design, unit testing, etc.).",
     ],
   },
   {
@@ -14,9 +15,9 @@ const experiences = [
     dates: "August 2021 - Present",
     company: "Google Developer Student Club at the University of Toronto",
     description: [
-      "Hosting biweekly technical workshops regularly attended by over 30 UofT students on topics like Git, React, AWS, etc",
-      "Regularly hosted professional development events such as mock technical interviews for students",
-      "Empowering students to expand their knowledge in technology and build solutions for their local communities",
+      "Hosted biweekly technical workshops attended by 100+ UofT students on topics like React, Docker, AWS, etc.",
+      "Led professional development events such as resume reviews and mock technical interviews regularly for students.",
+      "Empowered students to expand their knowledge in technology and build solutions for their local communities.",
     ],
   },
   {
