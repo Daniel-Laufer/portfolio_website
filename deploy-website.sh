@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /Users/daniellaufer/Documents/Code.nosync/2021/website_v2
-npm install
+npm install --legacy-peer-deps
 npm run build
 rm -rf /Users/daniellaufer/Documents/Code.nosync/2021/daniel-laufer.github.io/*
 cp -r ./build/* /Users/daniellaufer/Documents/Code.nosync/2021/daniel-laufer.github.io/
