@@ -5,7 +5,7 @@ const projects = [
       "A web app that facilitates the process of forming study groups at universities across Canada. Users can easily form meaningful connections with other students and form study groups that others can join.",
     technologies:
       "React, Redux, MongoDB, Google Cloud Run, Firebase, Socket.IO",
-    liveAppURL: "https://studytogether-bad5e.firebaseapp.com",
+    // liveAppURL: "https://studytogether-bad5e.firebaseapp.com",
     githubURL: "https://github.com/Daniel-Laufer/StudyTogether",
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     technologies:
       "React, Redux, Javascript, HTML, CSS, Firebase, Firestore, Git",
     gifURL: "https://github-readme-media.s3.amazonaws.com/textbookStore.gif",
-    liveAppURL: "https://textbook-store-2e072.web.app/",
+    // liveAppURL: "https://textbook-store-2e072.web.app/",
     githubURL: "https://github.com/Daniel-Laufer/textbook_store",
   },
   {

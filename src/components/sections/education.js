@@ -31,11 +31,9 @@ const Education = () => {
             </p>
             <p>
               <span> Some of my favourite courses I've taken at UofT: </span>
-              Principles of Computer Networks, Introduction to Databases,
-              Computational Complexity and Computability, Introduction to
-              Software Engineering, Software Design with Java , Data Structures
-              and Analysis, Systems Programming (Linux, Bash, C), Computer
-              Organization/Architecture (MIPS Assembly & Computer Hardware)
+              Introduction to Information Security, Principles of Computer Networks, Operating Systems, Introduction to Databases,
+              Introduction to Software Engineering, Software Design, Systems Programming, Computer
+              Organization/Architecture
             </p>
           </div>
         </Fade>

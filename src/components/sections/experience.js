@@ -131,6 +131,7 @@ const Section = styled.section`
     }
     .content {
       min-width: 530px;
+      min-height:470px;
 
       display: flex;
       gap: 0.8rem;

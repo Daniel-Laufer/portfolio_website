@@ -22,6 +22,19 @@ const Skills = () => {
           ))}
         </div>
       </Fade>
+      {/* <Fade right duration={1000}>
+        <h1>Information/Cyber Security Skills</h1>
+        <p>
+          After taking CSC347 (Information Security) and CSC427 (Computer Security) at the University of Toronto, I've had a considerable amount of hands-on, practical experience with all of the following:
+        
+        </p>
+        <ul className="skill-bullet-point">
+            <li>Exploiting and identifying vulnerabilities such as: using race condition arithmetic overflow/underflow </li>
+            <li>Wee</li>
+            <li>Mama</li>
+            
+        </ul>
+      </Fade> */}
       <div class="custom-shape-divider-bottom-1633933399">
         <svg
           data-name="Layer 1"
@@ -79,6 +92,30 @@ const Section = styled.section`
       }
     }
   }
+  .skill-bullet-point {
+    line-height: 1.6em;
+    margin: 5px 0 15px;
+    padding: 0;
+    font-size: 20px;
+    li {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 20px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: 2px solid ${colors.blue};
+      }
+    }
+  }
+
   .custom-shape-divider-bottom-1633933399 {
     position: absolute;
     bottom: -1px;

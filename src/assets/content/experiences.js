@@ -7,12 +7,12 @@ const experiences = [
       " Supported professors in lecture sections (each containing 160+ students) by leading in-class activities and answering students’ questions. Received positive feedback from professors and students.",
       "Graded hundreds of assignment/exam submissions per term under tight deadlines and provide constructive feedback to students to improve their computer science skills.",
       "Created and graded weekly tutorial content and led tutorial sections each containing 30+ students.",
-      "Courses: CSC209 (Systems Programming: Linux, C, Bash, etc.), CSC148 (Introduction to Computer Science: Python, object-oriented-programming, data structures, etc.), CSC207 (Software Design: Java, design Patterns, object-oriented-design, unit testing, etc.).",
+      "Courses: CSC301 (Introduction to Software Engineering), CSC209 (Systems Programming), CSC258 (Computer Architecture), CSC148 (Introduction to Computer Science), CSC207 (Software Design).",
     ],
   },
   {
     "job-title": "Technical/Workshop Lead",
-    dates: "August 2021 - Present",
+    dates: "August 2021 - August 2022",
     company: "Google Developer Student Club at the University of Toronto",
     description: [
       "Hosted biweekly technical workshops attended by 100+ UofT students on topics like React, Docker, AWS, etc.",
