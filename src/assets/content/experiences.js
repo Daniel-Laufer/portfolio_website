@@ -1,13 +1,22 @@
 const experiences = [
   {
+    "job-title": "Software Engineer Intern - Apple Software Driver Development",
+    dates: "May 2023 - Present",
+    company: "Advanced Micro Devices (AMD)",
+    description: [
+      "TBD.",
+    ],
+  },
+  {
     "job-title": "Computer Science Teaching Assistant",
-    dates: "January 2021 - Present",
+    dates: "January 2021 - April 2023",
     company: "University of Toronto",
     description: [
-      " Supported professors in lecture sections (each containing 160+ students) by leading in-class activities and answering students’ questions. Received positive feedback from professors and students.",
+      "Supported professors in lecture sections (each containing 160+ students) by leading in-class activities and answering students’ questions. Received positive feedback from professors and students.",
       "Graded hundreds of assignment/exam submissions per term under tight deadlines and provide constructive feedback to students to improve their computer science skills.",
-      "Created and graded weekly tutorial content and led tutorial sections each containing 30+ students.",
-      "Courses: CSC301 (Introduction to Software Engineering), CSC209 (Systems Programming), CSC258 (Computer Architecture), CSC148 (Introduction to Computer Science), CSC207 (Software Design).",
+      "Created and graded weekly tutorial content and led tutorial sections each containing 40+ students.",
+      "Held office hours for students to ask questions regarding course content and for help with their assignments.",
+      "Courses: CSC301 (Introduction to Software Engineering), CSC209 (Systems Programming) x2, CSC258 (Computer Architecture), CSC148 (Introduction to Computer Science) x2, CSC207 (Software Design).",
     ],
   },
   {
@@ -40,17 +49,10 @@ const experiences = [
     company: "Schulich School of Business, York University",
     description: [
       "Developed software and used various Google Cloud services to collect 31 million comments made by Reddit users on the subreddit 'Wall Street Bets' during the years 2019-2021.",
+      "The data collected was used in the following research paper titled \"Social Network Sentiment and Markets: Evidence from the Wallstreetbets Forum\" which can be found at this URL: \"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4384743\"",
       "Technologies used: Docker, Google Cloud's Compute Engine, Google Cloud's Cloud Storage, Python, Pandas.",
     ],
   },
-  // {
-  //   "job-title": "Computer Science Teaching Assistant (CSC148)",
-  //   dates: "January 2021 - April 2021",
-  //   company: "University of Toronto",
-  //   description: [
-  //     "Led weekly tutorial sessions for 80 students, assisted professors in lectures containing 160 students, marked assessments",
-  //   ],
-  // },
 ];
 
 export default experiences;

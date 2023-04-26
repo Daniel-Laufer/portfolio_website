@@ -4,6 +4,7 @@ import wealthscope from "../../assets/images/wealthscope.png";
 import schulich from "../../assets/images/schulich.jpeg";
 import gdsc from "../../assets/images/gdsc.webp";
 import uoft from "../../assets/images/uoft_square.png";
+import amd from "../../assets/images/amd.jpg";
 import { useState } from "react";
 import experiences from "../../assets/content/experiences";
 import Fade from "react-reveal/Fade";
@@ -12,7 +13,7 @@ const Experience = () => {
   const [selectedExperience, setSelectedExperience] = useState(0);
 
   // images in order from top to bottom
-  const images = [uoft, gdsc, wealthscope, schulich];
+  const images = [amd, uoft, gdsc, wealthscope, schulich];
 
   return (
     <Section>
@@ -38,23 +39,24 @@ const Experience = () => {
         </Fade>
         <Fade right duration={1000}>
           <div className="content">
-            <div className="job-title-date-row">
-              <div className="job-title">
-                {experiences[selectedExperience]["job-title"]}
+              <div className="job-title-date-row">
+                <div className="job-title">
+                  {experiences[selectedExperience]["job-title"]}
+                </div>
+                <div className="dates">
+                  {experiences[selectedExperience]["dates"]}
+                </div>
               </div>
-              <div className="dates">
-                {experiences[selectedExperience]["dates"]}
+              <div className="company">
+                {experiences[selectedExperience]["company"]}
               </div>
+              <ul className="job-description">
+                {experiences[selectedExperience]["description"].map((line) => {
+                  return <li>{line}</li>;
+                })}
+              </ul>
             </div>
-            <div className="company">
-              {experiences[selectedExperience]["company"]}
-            </div>
-            <ul className="job-description">
-              {experiences[selectedExperience]["description"].map((line) => {
-                return <li>{line}</li>;
-              })}
-            </ul>
-          </div>
+          {/* </div> */}
         </Fade>
       </div>
 
@@ -132,6 +134,8 @@ const Section = styled.section`
     .content {
       min-width: 530px;
       min-height:470px;
+      height:540px;
+      
 
       display: flex;
       gap: 0.8rem;
@@ -142,6 +146,10 @@ const Section = styled.section`
       font-size: 20px;
       color: black;
       padding: 2rem;
+
+      .content-text-wrapper{
+        overflow-y:scroll;
+      }
       .job-title-date-row {
         display: flex;
         justify-content: space-between;
@@ -159,6 +167,8 @@ const Section = styled.section`
         line-height: 1.6em;
         margin: 5px 0 15px;
         padding: 0;
+        overflow-y:scroll;
+        padding-right:10px;
         font-size: 20px;
         li {
           list-style: none;

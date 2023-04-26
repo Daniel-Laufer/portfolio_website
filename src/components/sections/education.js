@@ -17,23 +17,22 @@ const Education = () => {
           <div className="content">
             <h1>University of Toronto</h1>
             <p>
-              PEY Co-op student specializing in <span>computer science</span>{" "}
-              and <span>information security</span>; minoring in{" "}
+              Specializing in <span>computer science</span>{" "}with a concentration in
+              {" "}<span>information security</span>; minoring in{" "}
               <span>mathematics</span>
             </p>
             <p>
-              I'm in my <span>third year</span> and expecting to graduate in
+              I'm in my <span>fourth year</span> and expecting to graduate in
               <span> June 2025</span>
             </p>
 
             <p>
-              <span>CGPA:</span> 3.9/4.0 (88% average)
+              <span>CGPA:</span> 3.91/4.0 (89% average)
             </p>
             <p>
               <span> Some of my favourite courses I've taken at UofT: </span>
-              Introduction to Information Security, Principles of Computer Networks, Operating Systems, Introduction to Databases,
-              Introduction to Software Engineering, Software Design, Systems Programming, Computer
-              Organization/Architecture
+              Introduction to Information Security, Computer Security, Principles of Computer Networks, Operating Systems, Introduction to Databases,
+              Introduction to Software Engineering, Software Design, Systems Programming
             </p>
           </div>
         </Fade>
