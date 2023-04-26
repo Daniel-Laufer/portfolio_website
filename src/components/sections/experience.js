@@ -4,7 +4,7 @@ import wealthscope from "../../assets/images/wealthscope.png";
 import schulich from "../../assets/images/schulich.jpeg";
 import gdsc from "../../assets/images/gdsc.webp";
 import uoft from "../../assets/images/uoft_square.png";
-import amd from "../../assets/images/amd.jpg";
+import amd from "../../assets/images/amd.png";
 import { useState } from "react";
 import experiences from "../../assets/content/experiences";
 import Fade from "react-reveal/Fade";
@@ -98,6 +98,7 @@ const Section = styled.section`
     .logos {
       display: flex;
       flex-direction: column;
+
       padding-left: 1rem;
       gap: 10px;
       div {
@@ -148,7 +149,10 @@ const Section = styled.section`
       padding: 2rem;
 
       .content-text-wrapper{
-        overflow-y:scroll;
+        overflow-y:auto;
+      }
+      .context-text-wrapper::-webkit-scrollbar {
+        display: none;
       }
       .job-title-date-row {
         display: flex;
@@ -167,7 +171,7 @@ const Section = styled.section`
         line-height: 1.6em;
         margin: 5px 0 15px;
         padding: 0;
-        overflow-y:scroll;
+        overflow-y:auto;
         padding-right:10px;
         font-size: 20px;
         li {
