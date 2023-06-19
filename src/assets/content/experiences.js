@@ -1,6 +1,6 @@
 const experiences = [
   {
-    "job-title": "Software Engineer Intern - Apple Software Driver Development",
+    "job-title": "Software Engineer Intern",
     dates: "May 2023 - Present",
     company: "Advanced Micro Devices (AMD)",
     description: [

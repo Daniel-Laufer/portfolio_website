@@ -55,7 +55,7 @@ const Intro = () => {
               >
                 <FaLinkedin className="icon" color={colors.linkedInBlue} />
               </a>
-              <Button>
+              {/* <Button>
                 <a
                   href={resume}
                   style={{ color: "white" }}
@@ -64,7 +64,7 @@ const Intro = () => {
                 >
                   <FaDownload /> Resume
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
           <img
