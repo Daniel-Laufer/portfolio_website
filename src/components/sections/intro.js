@@ -1,16 +1,12 @@
 import styled from "styled-components";
 import colors from "../../utils/colors";
-import me from "../../assets/images/me.jpg";
+import me from "../../assets/images/me.png";
 import scrollDownGif from "../../assets/gifs/scroll-down.gif";
-import resume from "../../assets/pdfs/resume.pdf";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
-import { FaDownload } from "@react-icons/all-files/fa/FaDownload";
 import Typist from "react-typist";
 import Fade from "react-reveal/Fade";
 import { scroller } from "react-scroll";
-
-import { Button } from "semantic-ui-react";
 import { useGetScrollPosition } from "../../hooks";
 
 const Intro = () => {
@@ -28,7 +24,7 @@ const Intro = () => {
       <Fade top cascade duration={1000}>
         <div className="container">
           <div>
-            <img id="image-of-me" src={me} alt="me" />
+            <div id="image-of-me" />
           </div>
           <div className="content">
             <h1>
@@ -116,6 +112,8 @@ const Section = styled.section`
       width: 350px;
       height: 350px;
       border-radius: 50%;
+      background-image: url(${me});
+      background-size: contain;
     }
     .content {
       display: flex;
