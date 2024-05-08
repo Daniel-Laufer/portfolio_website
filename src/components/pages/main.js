@@ -1,4 +1,4 @@
-import { Intro, Experience, Education, Projects } from "../sections/";
+import { Intro, Experience, Education } from "../sections/";
 import Skills from "../sections/skills";
 
 function Main() {
@@ -7,7 +7,6 @@ function Main() {
       <Intro />
       <Experience />
       <Skills />
-      <Projects />
       <Education />
     </div>
   );

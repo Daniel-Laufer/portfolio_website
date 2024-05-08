@@ -1,40 +1,22 @@
 import styled from "styled-components";
-import colors from "../../utils/colors";
+import theme from "../../utils/theme";
 import skillImages from "../../assets/images/skills";
-import Fade from "react-reveal/Fade";
 
 const Skills = () => {
   return (
     <Section>
-      <Fade top duration={1000}>
-        <h1>Skills</h1>
-      </Fade>
-      <Fade left>
-        <p>
-          Here are some of the technologies that I am most proficient at using.
-          If you would like to see a complete list of my skills, or if you are
-          unfamiliar with any of the logos displayed below, please feel free to
-          look at my resume.
-        </p>
-        <div className="skills">
-          {Object.keys(skillImages).map((key, index) => (
-            <img key={index} src={skillImages[key]} alt="skill" />
-          ))}
-        </div>
-      </Fade>
-      {/* <Fade right duration={1000}>
-        <h1>Information/Cyber Security Skills</h1>
-        <p>
-          After taking CSC347 (Information Security) and CSC427 (Computer Security) at the University of Toronto, I've had a considerable amount of hands-on, practical experience with all of the following:
-        
-        </p>
-        <ul className="skill-bullet-point">
-            <li>Exploiting and identifying vulnerabilities such as: using race condition arithmetic overflow/underflow </li>
-            <li>Wee</li>
-            <li>Mama</li>
-            
-        </ul>
-      </Fade> */}
+      <h1>Skills</h1>
+      <p>
+        Here are some of the technologies that I am most proficient at using.
+        If you would like to see a complete list of my skills, or if you are
+        unfamiliar with any of the logos displayed below, please feel free to
+        look at my linkedin above!
+      </p>
+      <div className="skills">
+        {Object.keys(skillImages).map((key, index) => (
+          <img key={index} src={skillImages[key]} alt="skill" />
+        ))}
+      </div>
       <div class="custom-shape-divider-bottom-1633933399">
         <svg
           data-name="Layer 1"
@@ -58,8 +40,8 @@ const Section = styled.section`
   flex-direction: column;
   align-items: flex-start;
   padding: 8rem 15rem;
-  background-color: ${colors.white};
-  color: black;
+  background-color: ${theme.color.white};
+  color: ${theme.color.black};
   @media (max-width: 1000px) {
     padding: 8rem 1rem;
   }
@@ -76,7 +58,7 @@ const Section = styled.section`
     flex-wrap: wrap;
     gap: 3rem;
     border-radius: 20px;
-    border: 6px solid ${colors.blue};
+    border: 6px solid ${theme.color.blue};
     padding: 2rem;
 
     img {
@@ -111,7 +93,7 @@ const Section = styled.section`
         border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
-        border: 2px solid ${colors.blue};
+        border: 2px solid ${theme.color.blue};
       }
     }
   }

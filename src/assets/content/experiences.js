@@ -1,10 +1,22 @@
 const experiences = [
   {
     "job-title": "Software Engineer Intern",
-    dates: "May 2023 - Present",
+    dates: "September 2023 - April 2024",
+    company: "Dayforce",
+    description: [
+      "Developing the back-end microservices the comprise Dayforce's Test Execution Platform (TEP) using C#, Kafka, Redis, SQL.",
+      "Designed & developed an integral part of the new version of the TEP that monitors real-time distributed test suite executions for a number of metrics (completeness, excess of failure threshold, etc) occurring concurrently across hundreds of Kubernetes pods.",
+      "Designed and created the frontend & backend of the new TEP Management Dashboard, a React/ASP.NET web app that facilitates the process of managing test configuration, visualizing recent execution history, and more in a sleek, easy-to use interface; received glowing reviews from users and became the most consistently frequently visited page on the TEP dashboard.",
+      "Designed and coordinated the development of the integration of TEP with Jira that enabled developers to efficiently manage, execute, and view results from tests on TEP directly with Jira.",
+    ],
+  },
+  {
+    "job-title": "Software Engineer Intern",
+    dates: "May 2023 - August 2023",
     company: "Advanced Micro Devices (AMD)",
     description: [
-      "TBD.",
+      "Designed and developed new full-stack web application to streamline the process of collecting & analyzing performance metrics on AMD hardware and automated the collection using React, Typescript, Flask, and PostgreSQL.",
+      "Developing and contributing to a C++ application related to parsing and analyzing ETL traces."
     ],
   },
   {
@@ -16,7 +28,7 @@ const experiences = [
       "Graded hundreds of assignment/exam submissions per term under tight deadlines and provide constructive feedback to students to improve their computer science skills.",
       "Created and graded weekly tutorial content and led tutorial sections each containing 40+ students.",
       "Held office hours for students to ask questions regarding course content and for help with their assignments.",
-      "Courses: CSC301 (Introduction to Software Engineering), CSC209 (Systems Programming) x2, CSC258 (Computer Architecture), CSC148 (Introduction to Computer Science) x2, CSC207 (Software Design).",
+      "Courses: CSC347 (Introduction to Information Security), CSC301 (Introduction to Software Engineering), CSC209 (Systems Programming) x2, CSC258 (Computer Architecture), CSC148 (Introduction to Computer Science) x2, CSC207 (Software Design).",
     ],
   },
   {

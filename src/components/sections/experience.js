@@ -1,63 +1,56 @@
 import styled from "styled-components";
-import colors from "../../utils/colors";
+import theme from "../../utils/theme";
 import wealthscope from "../../assets/images/wealthscope.png";
 import schulich from "../../assets/images/schulich.jpeg";
 import gdsc from "../../assets/images/gdsc.webp";
 import uoft from "../../assets/images/uoft_square.png";
 import amd from "../../assets/images/amd.png";
+import dayforce from "../../assets/images/dayforce.png";
 import { useState } from "react";
 import experiences from "../../assets/content/experiences";
-import Fade from "react-reveal/Fade";
 
 const Experience = () => {
   const [selectedExperience, setSelectedExperience] = useState(0);
 
   // images in order from top to bottom
-  const images = [amd, uoft, gdsc, wealthscope, schulich];
+  const images = [dayforce, amd, uoft, gdsc, wealthscope, schulich];
 
   return (
     <Section>
-      <Fade top duration={1000}>
-        <h1>Experience</h1>
-      </Fade>
+      <h1>Experience</h1>
       <div className="experiences">
-        <Fade left duration={1000}>
-          <div className="logos">
-            {images.map((image, index) => (
-              <div
-                className={selectedExperience === index ? "active" : ""}
-                onClick={() => setSelectedExperience(index)}
-              >
-                <img
-                  src={image}
-                  alt="Company Logo"
-                  style={image === wealthscope ? { borderRadius: 0 } : {}}
-                />
-              </div>
-            ))}
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
-          <div className="content">
-              <div className="job-title-date-row">
-                <div className="job-title">
-                  {experiences[selectedExperience]["job-title"]}
-                </div>
-                <div className="dates">
-                  {experiences[selectedExperience]["dates"]}
-                </div>
-              </div>
-              <div className="company">
-                {experiences[selectedExperience]["company"]}
-              </div>
-              <ul className="job-description">
-                {experiences[selectedExperience]["description"].map((line) => {
-                  return <li>{line}</li>;
-                })}
-              </ul>
+        <div className="logos">
+          {images.map((image, index) => (
+            <div
+              className={selectedExperience === index ? "active" : ""}
+              onClick={() => setSelectedExperience(index)}
+            >
+              <img
+                src={image}
+                alt="Company Logo"
+                style={image === wealthscope ? { borderRadius: 0 } : {}}
+              />
             </div>
-          {/* </div> */}
-        </Fade>
+          ))}
+        </div>
+        <div className="content">
+          <div className="job-title-date-row">
+            <div className="job-title">
+              {experiences[selectedExperience]["job-title"]}
+            </div>
+            <div className="dates">
+              {experiences[selectedExperience]["dates"]}
+            </div>
+          </div>
+          <div className="company">
+            {experiences[selectedExperience]["company"]}
+          </div>
+          <ul className="job-description">
+            {experiences[selectedExperience]["description"].map((line) => {
+              return <li>{line}</li>;
+            })}
+          </ul>
+        </div>
       </div>
 
       <div class="custom-shape-divider-bottom-1633906461">
@@ -84,7 +77,7 @@ const Section = styled.section`
   align-items: flex-start;
   padding: 4rem 15rem;
   padding-bottom: 17rem;
-  background-color: ${colors.blue};
+  background-color: ${theme.color.blue};
 
   color: white;
   text-align: left;
@@ -134,18 +127,18 @@ const Section = styled.section`
     }
     .content {
       min-width: 530px;
-      min-height:470px;
+      min-height:660px;
       height:540px;
       
 
       display: flex;
       gap: 0.8rem;
       flex-direction: column;
-      background-color: white;
+      background-color: ${theme.color.white};
       border-radius: 30px;
       width: 100%;
       font-size: 20px;
-      color: black;
+      color: ${theme.color.black};
       padding: 2rem;
 
       .content-text-wrapper{
@@ -165,7 +158,7 @@ const Section = styled.section`
         }
       }
       .company {
-        color: ${colors.blue};
+        color: ${theme.color.blue};
       }
       .job-description {
         line-height: 1.6em;
@@ -188,7 +181,7 @@ const Section = styled.section`
             border-radius: 50%;
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
-            border: 2px solid ${colors.blue};
+            border: 2px solid ${theme.color.blue};
           }
         }
       }
@@ -209,16 +202,14 @@ const Section = styled.section`
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 144px;
+    height: 60px;
     transform: rotateY(180deg);
   }
 
   .custom-shape-divider-bottom-1633906461 .shape-fill {
-    fill: #ffffff;
+    fill: ${theme.color.white};
   }
 
-  @media (max-width: 1249px) {
-  }
   @media (max-width: 1050px) {
     padding: 12rem 1rem;
     padding-bottom: 20rem;
@@ -236,11 +227,12 @@ const Section = styled.section`
       }
       .content {
         font-size: 15px;
+        min-height:350px;
         .job-title-date-row {
           font-size: 15px;
         }
         .company {
-          color: ${colors.blue};
+          color: ${theme.color.blue};
         }
         .job-description {
           line-height: 1.6em;

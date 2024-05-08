@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "../../utils/colors";
+import theme from "../../utils/theme";
 import me from "../../assets/images/me.png";
 import scrollDownGif from "../../assets/gifs/scroll-down.gif";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
@@ -28,10 +28,11 @@ const Intro = () => {
           </div>
           <div className="content">
             <h1>
-              <Typist cursor={{ hideWhenDone: true }} avgTypingDelay={80}>
-                <Typist.Delay ms={1100} />
+              <Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30}>
+                <Typist.Delay ms={1000} />
                 Hi there! My name is
-                <Typist.Backspace count={20} delay={500} />
+                <Typist.Delay ms={800} />
+                <Typist.Backspace count={20} delay={50} />
                 Daniel Laufer
               </Typist>
             </h1>
@@ -49,18 +50,8 @@ const Intro = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLinkedin className="icon" color={colors.linkedInBlue} />
+                <FaLinkedin className="icon" color={theme.color.linkedIn} />
               </a>
-              {/* <Button>
-                <a
-                  href={resume}
-                  style={{ color: "white" }}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaDownload /> Resume
-                </a>
-              </Button> */}
             </div>
           </div>
           <img
@@ -98,7 +89,7 @@ const Section = styled.section`
   align-items: center;
   padding: 24rem 3rem;
   padding-top: 11rem;
-  background: ${colors.white};
+  background: ${theme.color.white};
 
   .container {
     display: flex;
@@ -136,12 +127,12 @@ const Section = styled.section`
           height: 60px;
         }
         a {
-          color: black;
+          color: ${theme.color.black};
         }
         button {
           height: 50px;
-          background-color: ${colors.blue};
-          color: ${colors.white};
+          background-color: ${theme.color.blue};
+          color: ${theme.color.white};
           font-size: 25px;
           padding: 0px 20px;
         }
