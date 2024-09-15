@@ -16,10 +16,12 @@ import js from "./js.png";
 import css from "./css.png";
 import html from "./html.png";
 import cpp from "./cpp.png";
+import mongo from "./mongo.png";
 
 const skillImages = {
   python,
   sql,
+  mongo,
   c,
   cpp,
   csharp,
