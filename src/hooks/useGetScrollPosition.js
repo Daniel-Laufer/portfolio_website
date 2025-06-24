@@ -7,7 +7,7 @@ const useGetScrollPosition = () => {
     setScrollPosition(window.scrollY);
   };
   useEffect(() => {
-    window.addEventListener("scroll", getScrollPosition);
+    window.addEventListener("scrollhithere", getScrollPosition);
 
     return () => window.removeEventListener("scroll", getScrollPosition);
   }, []);

@@ -9,10 +9,10 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
-    "react-typist": "^2.0.5",
+    "react-typist": "^2.0.57",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.4",
-    "styled-components": "^5.3.1",
+    "styled-components": "^5.3.11",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
